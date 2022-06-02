@@ -43,6 +43,9 @@
     line-height: 1.17;
     color: $main-bg-color;
   }
+  @media screen and (min-width: 1024px) {
+    margin-left: 12px;
+  }
 }
 
 .nav-list {
