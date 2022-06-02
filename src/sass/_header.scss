@@ -216,6 +216,10 @@
   color: $main-text-color;
   border: 1px solid #ffffff;
   border-radius: 5px;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
 
 .library-list__btn--active {
