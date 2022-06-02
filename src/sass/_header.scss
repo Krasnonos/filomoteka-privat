@@ -175,15 +175,10 @@
 
 .library-list {
   display: flex;
+  justify-content: center;
   margin-top: 76px;
   padding: 0;
   list-style: none;
-  @media screen and (min-width: 768px) {
-    margin-left: 216px;
-  }
-  @media screen and (min-width: 1024px) {
-    margin-left: 356px;
-  }
 }
 
 .library-list.is-hidden {
