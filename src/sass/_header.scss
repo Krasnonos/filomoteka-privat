@@ -33,6 +33,16 @@
   padding: 0;
 }
 
+.logo:focus .logo__text,
+.logo:hover .logo__text {
+  color: $accent-color;
+}
+
+.logo:focus .llogo__svg,
+.logo:hover .logo__svg {
+  fill: $accent-color;
+}
+
 .logo__svg {
 }
 
