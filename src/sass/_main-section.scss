@@ -1,0 +1,38 @@
+.main {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.container {
+}
+
+.film-list {
+}
+
+.film-list__item {
+}
+
+.film-list__item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.film-list__image {
+  width: 280px;
+  height: 402px;
+}
+
+.film-list__name {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $third-text-color;
+}
+
+.film-list__description {
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $accent-color;
+}
