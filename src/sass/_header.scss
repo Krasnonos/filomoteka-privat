@@ -149,6 +149,20 @@
   }
 }
 
+.library-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+    url(../images/library-mob-min.png);
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(../images/library-tablet-min.png);
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(../images/library-desc-min.png);
+  }
+}
+
 .library-list {
   list-style: none;
 }
