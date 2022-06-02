@@ -85,7 +85,7 @@
   border-radius: 2px;
 }
 
-.search {
+.search__form {
   position: relative;
 
   display: block;
@@ -130,6 +130,20 @@
 }
 
 .search__svg {
+}
+
+.search__error {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ff001b;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+  &.is-hidden {
+    display: none;
+  }
 }
 
 .library-list {
