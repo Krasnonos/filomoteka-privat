@@ -1,46 +1,89 @@
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   padding-top: 20px;
+//   padding-bottom: 38px;
+//   width: 100vw;
+//   min-height: 100vh;
+//   background: rgba(0, 0, 0, 0.25);
+//   @media screen and (min-width: 768px) {
+//     padding-top: 219px;
+//   }
+//   @media screen and(min-width:1024px) {
+//     padding-top: 151px;
+//   }
+// }
+// .modal {
+//   position: relative;
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding-top: 48px;
+//   padding-bottom: 40px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   width: 280px;
+//   background-color: #ffffff;
+//   @media screen and (min-width: 768px) {
+//     width: 704px;
+//     min-height: 552px;
+//     padding-top: 40px;
+//     padding-bottom: 40px;
+//     padding-right: 36px;
+//     padding-left: 36px;
+//   }
+//   @media screen and(min-width:1024px) {
+//     width: 814px;
+//     min-height: 558px;
+//     padding-top: 40px;
+//     padding-bottom: 40px;
+//     padding-right: 16px;
+//     padding-left: 16px;
+//   }
+// }
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 20px;
-  padding-bottom: 38px;
   width: 100vw;
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0.25);
-  @media screen and (min-width: 768px) {
-    padding-top: 219px;
-  }
-  @media screen and(min-width:1024px) {
-    padding-top: 151px;
-  }
+  transition: opacity 600ms linear, visability 250 linear;
+  background-color: rgba(0, 0, 0, 0.25);
 }
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) perspective(400px) rotateX(60deg);
+}
+
 .modal {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250 linear;
+  width: 280px;
+  height: auto;
   padding-top: 48px;
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 280px;
   background-color: #ffffff;
   @media screen and (min-width: 768px) {
     width: 704px;
-    min-height: 552px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 36px;
-    padding-left: 36px;
+    height: 552px;
   }
-  @media screen and(min-width:1024px) {
+  @media screen and (min-width: 1024px) {
     width: 814px;
-    min-height: 558px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 16px;
-    padding-left: 16px;
+    height: 558px;
   }
 }
+// ----------------------
 .modal__btn {
   position: absolute;
   top: 8px;
