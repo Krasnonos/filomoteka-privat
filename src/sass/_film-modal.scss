@@ -1,9 +1,4 @@
 .backdrop {
-  //   width: 100%;
-  //   height: 100%;
-  //   padding-top: 20px;
-  //   padding-bottom: 38px;
-  //   background: rgba(0, 0, 0, 0.25);
   position: static;
   top: 0;
   left: 0;
@@ -12,6 +7,12 @@
   width: 100vw;
   min-height: 100vh;
   background: rgba(0, 0, 0, 0.25);
+  @media screen and (min-width: 768px) {
+    padding-top: 219px;
+  }
+  @media screen and(min-width:1024px) {
+    padding-top: 151px;
+  }
 }
 .modal {
   position: relative;
@@ -25,7 +26,7 @@
   background-color: #ffffff;
   @media screen and (min-width: 768px) {
     width: 704px;
-    height: 552px;
+    min-height: 552px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 36px;
@@ -33,7 +34,7 @@
   }
   @media screen and(min-width:1024px) {
     width: 814px;
-    height: 558px;
+    min-height: 558px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 16px;
@@ -171,15 +172,15 @@
   }
 }
 .film__add-item {
-  width: 110px;
-  height: 44px;
+  min-width: 110px;
+  min-height: 44px;
   text-align: center;
   @media screen and (min-width: 768px) {
-    width: 125px;
-    height: 44px;
+    min-width: 125px;
+    min-height: 44px;
   }
   @media screen and (min-width: 1024px) {
-    width: 136px;
+    min-width: 136px;
   }
 }
 
