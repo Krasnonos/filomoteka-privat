@@ -1,5 +1,5 @@
 .backdrop {
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   padding-top: 20px;
@@ -92,6 +92,7 @@
 }
 
 .film__tittle {
+  width: 240px;
   font-size: 20px;
   line-height: 1.15;
   text-transform: uppercase;
