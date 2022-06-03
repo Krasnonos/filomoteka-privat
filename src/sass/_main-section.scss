@@ -60,6 +60,13 @@
   }
 }
 
+.film-list__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .film-list__name {
   margin-top: 10px;
   font-size: 12px;
